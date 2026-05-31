@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandman AI — n8n + Claude AI Automation Workflows</title>
+<meta name="description" content="Plug-and-play n8n workflows powered by Claude AI. Import, configure, run. No code required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0A0A0F;color:#E8E8F0;font-family:'Syne',sans-serif;min-height:100vh;overflow-x:hidden}
+  .grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
+  .container{max-width:860px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .logo{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:#fff;letter-spacing:0.1em}
+  .logo span{color:#5DCAA5}
+  .nav-badge{font-family:'JetBrains Mono',monospace;font-size:11px;color:#5DCAA5;border:1px solid #1D9E75;padding:4px 12px;border-radius:2px}
+  .hero{padding:80px 0 60px;text-align:center}
+  .hero-tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:#5DCAA5;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:24px;display:block}
+  h1{font-size:clamp(36px,6vw,64px);font-weight:800;line-height:1.05;letter-spacing:-0.02em;margin-bottom:20px}
+  h1 em{font-style:normal;color:#5DCAA5}
+  .hero-sub{font-family:'JetBrains Mono',monospace;font-size:14px;color:rgba(232,232,240,0.5);max-width:480px;margin:0 auto 40px;line-height:1.7}
+  .free-btn{display:inline-flex;align-items:center;gap:10px;background:#1D9E75;color:#fff;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;padding:14px 28px;border-radius:2px;text-decoration:none;letter-spacing:0.05em;transition:background 0.2s}
+  .free-btn:hover{background:#085041}
+  .section-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(232,232,240,0.3);letter-spacing:0.2em;text-transform:uppercase;margin:60px 0 24px;display:flex;align-items:center;gap:12px}
+  .section-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.06)}
+  .products{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:4px}
+  .product{background:#0F0F1A;border:1px solid rgba(255,255,255,0.06);padding:28px;text-decoration:none;color:inherit;display:block;transition:border-color 0.2s,background 0.2s}
+  .product:hover{border-color:rgba(93,202,165,0.3);background:#111120}
+  .product-tag{font-family:'JetBrains Mono',monospace;font-size:10px;color:#5DCAA5;letter-spacing:0.1em;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
+  .product-price{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#fff;background:#1D3A2A;padding:3px 10px;border-radius:2px}
+  .product h3{font-size:17px;font-weight:600;margin-bottom:10px;line-height:1.3}
+  .product p{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(232,232,240,0.45);line-height:1.7;margin-bottom:20px}
+  .product-flow{font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(93,202,165,0.6);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .product-flow span{color:rgba(93,202,165,0.3)}
+  .product-link{font-family:'JetBrains Mono',monospace;font-size:11px;color:#5DCAA5;margin-top:20px;display:flex;align-items:center;gap:6px}
+  .free-card{background:#050F0A;border:1px solid rgba(29,158,117,0.25);padding:28px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:60px;text-decoration:none;color:inherit;transition:border-color 0.2s}
+  .free-card:hover{border-color:rgba(29,158,117,0.5)}
+  .free-card-left h3{font-size:16px;font-weight:600;margin-bottom:6px}
+  .free-card-left p{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(232,232,240,0.45);line-height:1.6}
+  .free-badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:#0A0A0F;background:#1D9E75;padding:8px 20px;border-radius:2px;white-space:nowrap;flex-shrink:0}
+  footer{border-top:1px solid rgba(255,255,255,0.06);padding:32px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  .footer-brand{font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(232,232,240,0.3)}
+  .footer-links{display:flex;gap:20px}
+  .footer-links a{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(232,232,240,0.3);text-decoration:none;transition:color 0.2s}
+  .footer-links a:hover{color:#5DCAA5}
+  @media(max-width:600px){.products{grid-template-columns:1fr}.free-card{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="container">
+
+  <nav>
+    <div class="logo">SANDMAN<span>AI</span></div>
+    <div class="nav-badge">n8n + Claude AI</div>
+  </nav>
+
+  <div class="hero">
+    <span class="hero-tag">// automation workflows</span>
+    <h1>Your business,<br><em>working while</em><br>you sleep.</h1>
+    <p class="hero-sub">Plug-and-play n8n workflows powered by Claude AI. Import, configure, run. No code required.</p>
+    <a href="https://sandmanai.gumroad.com/l/rkchvz" class="free-btn">Get the free starter pack →</a>
+  </div>
+
+  <div class="section-label">// paid templates</div>
+
+  <!-- ==============================
+       PRODUCTS — add new cards here
+       Copy one <a class="product">...</a> block,
+       update the href, label, title, description,
+       flow, and price. That's it.
+  =============================== -->
+  <div class="products">
+
+    <a href="https://sandmanai.gumroad.com/l/zckali" class="product">
+      <div class="product-tag">
+        <span>COLD EMAIL</span>
+        <span class="product-price">$49</span>
+      </div>
+      <h3>AI Cold Email Opener Generator</h3>
+      <p>Reads leads from Google Sheets, writes personalized 1-2 sentence openers with Claude AI.</p>
+      <div class="product-flow">Google Sheets <span>→</span> Claude AI <span>→</span> Opener</div>
+      <div class="product-link">Get template →</div>
+    </a>
+
+    <a href="https://sandmanai.gumroad.com/l/YOUR_SLUG" class="product">
+      <div class="product-tag">
+        <span>SLACK</span>
+        <span class="product-price">$39</span>
+      </div>
+      <h3>Slack Daily Digest Bot</h3>
+      <p>Summarizes your Slack channel every morning. Decisions, action items, open questions — before standup.</p>
+      <div class="product-flow">Slack <span>→</span> Claude AI <span>→</span> Digest</div>
+      <div class="product-link">Get template →</div>
+    </a>
+
+    <a href="https://sandmanai.gumroad.com/l/YOUR_SLUG" class="product">
+      <div class="product-tag">
+        <span>FINANCE</span>
+        <span class="product-price">$49</span>
+      </div>
+      <h3>Invoice OCR Automation</h3>
+      <p>PDF invoice arrives in Gmail → GPT-4o extracts every field → logged to Google Sheets automatically.</p>
+      <div class="product-flow">Gmail PDF <span>→</span> GPT-4o <span>→</span> Sheets</div>
+      <div class="product-link">Get template →</div>
+    </a>
+
+    <a href="https://sandmanai.gumroad.com/l/YOUR_SLUG" class="product">
+      <div class="product-tag">
+        <span>NOTION</span>
+        <span class="product-price">$39</span>
+      </div>
+      <h3>Notion RAG Knowledge Base</h3>
+      <p>Ask a question → n8n searches your Notion database → Claude answers from your docs.</p>
+      <div class="product-flow">Webhook <span>→</span> Notion <span>→</span> Claude AI</div>
+      <div class="product-link">Get template →</div>
+    </a>
+
+  </div>
+  <!-- ==============================
+       END PRODUCTS
+  =============================== -->
+
+  <div class="section-label">// free</div>
+
+  <a href="https://sandmanai.gumroad.com/l/rkchvz" class="free-card">
+    <div class="free-card-left">
+      <h3>5 Essential n8n + Claude AI Workflows — Free Starter Pack</h3>
+      <p>Cold email openers · Slack digest · Meeting notes · Subject lines · LinkedIn posts</p>
+    </div>
+    <div class="free-badge">FREE DOWNLOAD →</div>
+  </a>
+
+  <footer>
+    <div class="footer-brand">© 2025 Sandman AI · sandmanai.gumroad.com</div>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/sandmanaiinfo">Facebook</a>
+      <a href="https://www.instagram.com/sandmanaiinfo">Instagram</a>
+      <a href="mailto:hello@sandmanai.com">Email</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
