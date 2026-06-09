@@ -66,6 +66,8 @@
 
   <div class="section-label">// start here — free</div>
 
+  <div id="freebies-grid"></div>
+
   <a href="https://sandmanai.gumroad.com/l/igdm-free" class="free-card" style="margin-bottom:2px">
     <div class="free-card-left">
       <h3>AI Instagram DM Auto-Responder</h3>
@@ -172,5 +174,28 @@
   </footer>
 
 </div>
+<script>
+fetch('freebies.json')
+  .then(r => r.json())
+  .then(freebies => {
+    if (!freebies.length) return;
+    const grid = document.getElementById('freebies-grid');
+    freebies.slice().reverse().forEach(f => {
+      const a = document.createElement('a');
+      a.href = f.gumroad_url || '#';
+      a.className = 'free-card';
+      a.style.marginBottom = '2px';
+      a.innerHTML = `
+        <div class="free-card-left">
+          <h3>${f.title}</h3>
+          <p>${f.description}</p>
+        </div>
+        <div class="free-badge">FREE DOWNLOAD →</div>
+      `;
+      grid.appendChild(a);
+    });
+  })
+  .catch(() => {});
+</script>
 </body>
 </html>
