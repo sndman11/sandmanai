@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "title": "Test",
+    "description": "Test desc",
+    "type": "prompt_pack",
+    "keyword": "TEST",
+    "date": "2026-06-09",
+    "gumroad_url": ""
+  }
+]
