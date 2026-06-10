@@ -1,4 +1,12 @@
 [
+{
+ "title": "Automate Your Meeting Notes in 5 Steps",
+    "description": "n8n can transcribe, summarize, and send your meeting notes automatically",
+    "type": "Meeting Notes Automation Starter Guide",
+    "keyword": "NOTES",
+    "date": "2026-06-09",
+    "gumroad_url": "sandmanai.gumroad.com/l/47minutes"
+}
   {
     "title": "7 Claude Prompts That Actually Work",
     "description": "Ready-to-use prompts for content, research, client work, and workflow automation — built for people who want real output, not generic AI slop.",
