@@ -2,11 +2,6 @@
   "free": [
     {
       "name": "Cold Email AI Starter Kit",
-      "description": "A ready-to-use pack of 6 AI prompts that write personalized cold emails, follow-ups, and subject lines so you can land clients without staring at a blank screen.",
-      "gumroad_url": ""
-    },
-    {
-      "name": "Cold Email AI Starter Kit",
       "description": "AI to research prospects, write high-converting cold emails, and automate follow-ups.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/ColdEmail"
     },
@@ -21,8 +16,8 @@
       "gumroad_url": "https://sandmanai.gumroad.com/l/yt-script-free"
     },
     {
-      "name": "5 Essential n8n + Claude AI Workflows — Free Starter Pack",
-      "description": "Cold email openers · Slack digest · Meeting notes · Subject lines · LinkedIn posts",
+      "name": "5 Essential n8n + Claude AI Workflows \u2014 Free Starter Pack",
+      "description": "Cold email openers \u00b7 Slack digest \u00b7 Meeting notes \u00b7 Subject lines \u00b7 LinkedIn posts",
       "gumroad_url": "https://sandmanai.gumroad.com/l/rkchvz"
     }
   ],
@@ -44,7 +39,7 @@
     },
     {
       "name": "Slack Daily Digest Bot",
-      "description": "Summarizes your Slack channel every morning. Decisions, action items, open questions — before standup.",
+      "description": "Summarizes your Slack channel every morning. Decisions, action items, open questions \u2014 before standup.",
       "price": 39,
       "category": "Slack",
       "tags": [
@@ -74,7 +69,7 @@
     },
     {
       "name": "Notion RAG Knowledge Base",
-      "description": "Ask a question — n8n searches your Notion database and Claude answers from your docs.",
+      "description": "Ask a question \u2014 n8n searches your Notion database and Claude answers from your docs.",
       "price": 39,
       "category": "Notion",
       "tags": [
