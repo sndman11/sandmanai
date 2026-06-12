@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The 5-Part Prompt Formula Cheat Sheet",
+      "description": "A ready-to-use cheat sheet with the 5-part prompt formula, 6 fully built example prompts across real use cases, and a fill-in-the-blank template so you never write a garbage prompt again.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/racljq"
+    },
+    {
       "name": "Cold Email AI Starter Kit",
       "description": "AI to research prospects, write high-converting cold emails, and automate follow-ups.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/ColdEmail"
@@ -16,8 +21,8 @@
       "gumroad_url": "https://sandmanai.gumroad.com/l/yt-script-free"
     },
     {
-      "name": "5 Essential n8n + Claude AI Workflows \u2014 Free Starter Pack",
-      "description": "Cold email openers \u00b7 Slack digest \u00b7 Meeting notes \u00b7 Subject lines \u00b7 LinkedIn posts",
+      "name": "5 Essential n8n + Claude AI Workflows — Free Starter Pack",
+      "description": "Cold email openers · Slack digest · Meeting notes · Subject lines · LinkedIn posts",
       "gumroad_url": "https://sandmanai.gumroad.com/l/rkchvz"
     }
   ],
@@ -39,7 +44,7 @@
     },
     {
       "name": "Slack Daily Digest Bot",
-      "description": "Summarizes your Slack channel every morning. Decisions, action items, open questions \u2014 before standup.",
+      "description": "Summarizes your Slack channel every morning. Decisions, action items, open questions — before standup.",
       "price": 39,
       "category": "Slack",
       "tags": [
@@ -69,7 +74,7 @@
     },
     {
       "name": "Notion RAG Knowledge Base",
-      "description": "Ask a question \u2014 n8n searches your Notion database and Claude answers from your docs.",
+      "description": "Ask a question — n8n searches your Notion database and Claude answers from your docs.",
       "price": 39,
       "category": "Notion",
       "tags": [
