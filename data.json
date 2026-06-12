@@ -1,6 +1,10 @@
 {
   "free": [
-
+    {
+      "name": "Cold Email AI Starter Kit",
+      "description": "A ready-to-use pack of 6 AI prompts that write personalized cold emails, follow-ups, and subject lines so you can land clients without staring at a blank screen.",
+      "gumroad_url": ""
+    },
     {
       "name": "Cold Email AI Starter Kit",
       "description": "AI to research prospects, write high-converting cold emails, and automate follow-ups.",
@@ -28,7 +32,11 @@
       "description": "Reads leads from Google Sheets, writes personalized 1-2 sentence openers with Claude AI.",
       "price": 49,
       "category": "Cold Email",
-      "tags": ["Google Sheets", "Claude AI", "Gmail"],
+      "tags": [
+        "Google Sheets",
+        "Claude AI",
+        "Gmail"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/zckali",
       "hook": "COLD EMAIL ON AUTOPILOT. ZERO EFFORT.",
       "thumbnail_color": "#1E3A5F",
@@ -39,7 +47,11 @@
       "description": "Summarizes your Slack channel every morning. Decisions, action items, open questions — before standup.",
       "price": 39,
       "category": "Slack",
-      "tags": ["Slack", "Claude AI", "Digest"],
+      "tags": [
+        "Slack",
+        "Claude AI",
+        "Digest"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/qocjv",
       "hook": "SLACK IS NOISY. YOUR DIGEST ISN'T.",
       "thumbnail_color": "#2D1B5E",
@@ -50,7 +62,11 @@
       "description": "PDF invoice arrives in Gmail, GPT-4o extracts every field, logged to Google Sheets automatically.",
       "price": 49,
       "category": "Finance",
-      "tags": ["Gmail", "GPT-4o", "Google Sheets"],
+      "tags": [
+        "Gmail",
+        "GPT-4o",
+        "Google Sheets"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/fnicuf",
       "hook": "YOUR INVOICES READ THEMSELVES NOW.",
       "thumbnail_color": "#1A3C2B",
@@ -61,7 +77,11 @@
       "description": "Ask a question — n8n searches your Notion database and Claude answers from your docs.",
       "price": 39,
       "category": "Notion",
-      "tags": ["Notion", "Claude AI", "Webhook"],
+      "tags": [
+        "Notion",
+        "Claude AI",
+        "Webhook"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/rnouqi",
       "hook": "ASK YOUR DOCS ANYTHING. GET REAL ANSWERS.",
       "thumbnail_color": "#1A1A3E",
@@ -72,7 +92,11 @@
       "description": "Monitors competitors and topics from Google Sheets, delivers a Claude AI-written digest to Gmail every weekday morning.",
       "price": 39,
       "category": "Intelligence",
-      "tags": ["Google Sheets", "Claude AI", "Gmail"],
+      "tags": [
+        "Google Sheets",
+        "Claude AI",
+        "Gmail"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/ujdeey",
       "hook": "STOP GOOGLING. START KNOWING.",
       "thumbnail_color": "#3D1515",
@@ -83,7 +107,11 @@
       "description": "Generate personalized LinkedIn messages from a prospect list. Claude writes, n8n sends.",
       "price": 29,
       "category": "LinkedIn",
-      "tags": ["LinkedIn", "Claude AI", "Google Sheets"],
+      "tags": [
+        "LinkedIn",
+        "Claude AI",
+        "Google Sheets"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com",
       "hook": "LINKEDIN LEADS WITHOUT LIVING ON LINKEDIN.",
       "thumbnail_color": "#0A2540",
@@ -94,7 +122,11 @@
       "description": "Transcribe, summarize, and send your meeting notes automatically. No manual typing, no forgotten action items.",
       "price": 49,
       "category": "Productivity",
-      "tags": ["Gmail", "Claude AI", "n8n"],
+      "tags": [
+        "Gmail",
+        "Claude AI",
+        "n8n"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com/l/47minutes",
       "hook": "YOU WASTED 47 MINUTES WRITING NOTES AGAIN.",
       "thumbnail_color": "#0F0F0F",
@@ -105,7 +137,11 @@
       "description": "Monitors 5 subreddits daily, scores posts with Claude AI, emails you a digest of threads worth replying to.",
       "price": 39,
       "category": "Intelligence",
-      "tags": ["Reddit", "Claude AI", "Gmail"],
+      "tags": [
+        "Reddit",
+        "Claude AI",
+        "Gmail"
+      ],
       "gumroad_url": "https://sandmanai.gumroad.com",
       "hook": "FIND WARM LEADS ON REDDIT. AUTOMATICALLY.",
       "thumbnail_color": "#1A0A0A",
