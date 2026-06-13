@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "Invoice AI Prompt Pack: Extract Any Invoice with Claude",
+      "description": "A pack of 6 ready-to-use Claude prompts that extract, validate, and format invoice data automatically — no manual typing required.",
+      "gumroad_url": ""
+    },
+    {
       "name": "The 5-Part Prompt Formula Cheat Sheet",
       "description": "A ready-to-use cheat sheet with the 5-part prompt formula, 6 fully built example prompts across real use cases, and a fill-in-the-blank template so you never write a garbage prompt again.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/racljq"
