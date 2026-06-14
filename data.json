@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The Daily Content Engine Cheat Sheet",
+      "description": "A practical cheat sheet breaking down the exact n8n workflow structure used to generate, format, and schedule daily social content in under 10 minutes.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/mhrjjp"
+    },
+    {
       "name": "The 10-Minute Content Engine Blueprint",
       "description": "A step-by-step mini guide showing exactly how to build an automated content pipeline using n8n, AI nodes, and free tools — so you can post daily in under 10 minutes.",
       "gumroad_url": ""
