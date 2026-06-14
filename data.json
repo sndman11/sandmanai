@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The 10-Minute Content Engine Blueprint",
+      "description": "A step-by-step mini guide showing exactly how to build an automated content pipeline using n8n, AI nodes, and free tools — so you can post daily in under 10 minutes.",
+      "gumroad_url": ""
+    },
+    {
       "name": "Invoice AI Prompt Pack: Extract Any Invoice with Claude",
       "description": "A pack of 6 ready-to-use Claude prompts that extract, validate, and format invoice data automatically — no manual typing required.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/jylbzs"
