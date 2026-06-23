@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "Claude Prompt Pack That Actually Works",
+      "description": "7 ready-to-use Claude prompts that turn the AI into a business operator — covering content creation, client research, offer writing, and workflow planning.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/ngpzp"
+    },
+    {
       "name": "The 7-Layer Prompt Framework",
       "description": "A ready-to-use prompt pack with 7 fully engineered prompts built on a proven 7-layer structure — designed for automation, content, and business tasks that actually produce usable AI output.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/hiuevdj"
