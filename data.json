@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "Claude AI Workflow Setup Guide: 5 Steps to Automate Your First Real Task",
+      "description": "A practical step-by-step guide showing beginners how to connect Claude AI to real automation workflows — from API setup to building your first n8n-powered task that runs on autopilot.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/yucmo"
+    },
+    {
       "name": "Claude Prompt Pack That Actually Works",
       "description": "7 ready-to-use Claude prompts that turn the AI into a business operator — covering content creation, client research, offer writing, and workflow planning.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/ngpzp"
