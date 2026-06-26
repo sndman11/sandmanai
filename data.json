@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The Email Automation Starter Guide: Let n8n Run Your Inbox",
+      "description": "A practical step-by-step guide showing you exactly how to set up an n8n workflow that categorizes, drafts, and manages your emails using AI — so you stop drowning in your inbox every morning.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/qquky"
+    },
+    {
       "name": "Claude AI Workflow Setup Guide: 5 Steps to Automate Your First Real Task",
       "description": "A practical step-by-step guide showing beginners how to connect Claude AI to real automation workflows — from API setup to building your first n8n-powered task that runs on autopilot.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/yucmo"
