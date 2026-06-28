@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The n8n Beginner Blueprint",
+      "description": "A practical mini-guide covering the 5 essential n8n workflows every beginner should build first, with step-by-step logic and real use cases you can deploy immediately.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/webdo"
+    },
+    {
       "name": "The AI Business Autopilot Starter Guide",
       "description": "A practical 5-workflow guide showing small business owners exactly how to automate lead follow-up, email responses, content scheduling, reporting, and client onboarding using AI tools — no coding required.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/yxjokp"
