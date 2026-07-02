@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "The n8n Beginner Blueprint: 5 Workflows You Can Build Today",
+      "description": "A practical mini-guide covering 5 ready-to-build n8n workflows that eliminate repetitive tasks — with node-by-node breakdowns and zero coding required.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/bqkir"
+    },
+    {
       "name": "Prompt Engineering Cheat Sheet: 5 Frameworks That Actually Work",
       "description": "A ready-to-use cheat sheet with 5 proven prompt frameworks that transform vague AI outputs into sharp, usable results — no experience required.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/uatsqo"
