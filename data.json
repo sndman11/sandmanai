@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "Passive Income Automation Playbook",
+      "description": "A practical guide showing 4 real automation workflows you can build in n8n to generate leads, repurpose content, and onboard clients — all while you sleep.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/xfqlp"
+    },
+    {
       "name": "The n8n Beginner Blueprint: 5 Workflows You Can Build Today",
       "description": "A practical mini-guide covering 5 ready-to-build n8n workflows that eliminate repetitive tasks — with node-by-node breakdowns and zero coding required.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/bqkir"
