@@ -1,6 +1,11 @@
 {
   "free": [
     {
+      "name": "7 Prompt Formulas That Actually Work",
+      "description": "A ready-to-use prompt engineering cheat sheet with 7 battle-tested prompt formulas covering content creation, research, automation, and more — built for people who want better AI outputs without the trial and error.",
+      "gumroad_url": "https://sandmanai.gumroad.com/l/mjxmpt"
+    },
+    {
       "name": "Cold Email Automation Starter Guide",
       "description": "A practical step-by-step guide showing you exactly how to use AI and n8n to automate cold email outreach — from lead input to personalized send to follow-up — without touching it daily.",
       "gumroad_url": "https://sandmanai.gumroad.com/l/vairx"
